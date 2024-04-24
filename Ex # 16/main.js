@@ -1,0 +1,11 @@
+var guestList = ["Ali", "Majid", "Muneer", "Haseeb"];
+var dontcome = guestList[0];
+console.log(dontcome, "Nhi ahh sakta");
+guestList.splice(0, 1, "zain");
+console.log("Good News! we have foung a bigger dinner table.");
+guestList.unshift("Mirza");
+guestList.push("Bilal");
+var middleIndex = Math.floor(guestList.length / 2);
+guestList.splice(middleIndex, 0, "Hassan");
+console.log("Updated list to our Guest");
+guestList.forEach(function (list) { return console.log("Salam ".concat(list, ", would you like to dinner with me.")); });
